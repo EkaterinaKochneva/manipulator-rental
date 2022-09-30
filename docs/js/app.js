@@ -18,4 +18,47 @@ window.onload = function () {
 		$(this).toggleClass("active");
 		$(".body-header__search").slideToggle().find('input').focus();
 	});
+
+	// Кнопка скрытия содержимого
+	$('.prod-item__collaps-btn').on('click', function () {
+        $(this).toggleClass('active');
+        $(this).prev().toggleClass('collapsed');
+    });
+
+	// Слайдеры
+
+	const servicesSlider = new Swiper('.services-block__slider', {
+		slidesPerView: 1,
+		spaceBetween: 20,
+		loop: true,
+		autoHeight: true,
+
+		navigation: {
+			hide: false,
+			nextEl: '.services-block__slider-btn-next',
+			prevEl: '.services-block__slider-btn-prev',
+		},
+
+		pagination: {
+			el: '.services-block__slider-pagination',
+			clickable: true,
+		},
+		
+		breakpoints: {
+
+			1199: {
+				slidesPerView: 3,
+				spaceBetween: 30,
+			},
+			991: {
+				slidesPerView: 3,
+				spaceBetween: 15,
+			},
+			575: {
+				slidesPerView: 2,	
+				spaceBetween: 20,
+			}
+		},
+	});
+
 }

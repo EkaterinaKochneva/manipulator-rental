@@ -4,9 +4,12 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
     <body>
         <div class="wrapper">
@@ -219,8 +222,8 @@
                     </div>
                 </section>
                 <!-- End Hero block -->
-                <div class="container">
 
+                <div class="container">
                      <!-- Benefits block -->
                     <div class="benefits">
                         <div class="row g-3 g-md-4">
@@ -334,6 +337,7 @@
                     </div>
                     <!-- End How We Work block -->
 
+                    <!-- Catalog block -->
                     <section class="section main-catalog">
                         <div class="main-catalog__wrapper">
                             <div class="section__title">
@@ -399,8 +403,8 @@
                                 </div>
                             </div>
                             <div class="main-catalog__list">
-                                <div class="row">
-                                    <div class="col-3">
+                                <div class="row g-3 g-lg-4 gy-lg-4">                                    
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
                                         <div class="prod-item">
                                             <div class="prod-item__category">
                                                 Бортовой манипулятор
@@ -416,44 +420,503 @@
                                             </div>
                                             <div class="prod-item__content">
                                                 <div class="prod-item__info">
-                                                    <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78</a>
-                                                    <ul class="prod-item__feature">
-                                                        <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
-                                                        <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
-                                                        <li><span>Длина:</span> 5 м.</li>                                                    
-                                                        <li><span>Ширина:</span> 2.1 м.</li>                                                    
-                                                        <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
-                                                        <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
-                                                        <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
-                                                        <li><span>Длина:</span> 5 м.</li>                                                    
-                                                        <li><span>Ширина:</span> 2.1 м.</li>                                                   
-                                                    </ul>
+                                                    <div class="prod-item__desc">
+                                                        <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78</a>
+                                                        <ul class="prod-item__feature">
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                    
+                                                            <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                   
+                                                        </ul>
+                                                    </div>                                                    
                                                     <button type="button" class="prod-item__collaps-btn">
-                                                        <svg class="icon-svg">
-                                                            <use xlink:href="img/icons/sprite-icons.svg#more-btn"></use>
-                                                        </svg>
+                                                        <img src="img/more-btn.png" alt="иконка развернуть информацию">
                                                     </button>
-                                                </div>   
-                                                <div class="prod-item__price">от <span>800</span> руб. смена</div>
+                                                </div>                                                   
                                                 <div class="prod-item__bottom">
-                                                    <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
-                                                    <button class="prod-item__add-to-compare" type="button">
-                                                        <svg class="prod-item__add-to-compare-icon icon-svg">
-                                                            <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
-                                                        </svg>
-                                                        <span>В сравнение</span>                                                        
-                                                    </button>                                                
+                                                    <div class="prod-item__price">от <span>800</span> руб. смена</div>
+                                                    <div class="prod-item__btn-block">
+                                                        <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
+                                                        <button class="prod-item__add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-compare-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                            </svg>
+                                                            <span>В сравнение</span>                                                        
+                                                        </button> 
+                                                    </div>                                                                                                   
+                                                </div>                                             
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="prod-item">
+                                            <div class="prod-item__category">
+                                                Бортовой манипулятор
+                                            </div>
+                                            <div class="prod-item__picture">
+                                                <div class="prod-item__img-wrap" href="#">
+                                                   <img class="prod-item__img" src="img/catalog/2.jpg" alt="Товар 2">
+                                                </div>
+                                                <div class="prod-item__tags">
+                                                    <!-- <div class="prod-item__tag prod-item__tag--discount">Скидка</div>
+                                                    <div class="prod-item__tag prod-item__tag--hit">Популярное</div> -->
+                                                </div>                                                
+                                            </div>
+                                            <div class="prod-item__content">
+                                                <div class="prod-item__info">
+                                                    <div class="prod-item__desc">
+                                                        <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78</a>
+                                                        <ul class="prod-item__feature">
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                    
+                                                            <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                   
+                                                        </ul>
+                                                    </div>                                                    
+                                                    <button type="button" class="prod-item__collaps-btn">
+                                                        <img src="img/more-btn.png" alt="иконка развернуть информацию">
+                                                    </button>
+                                                </div>                                                   
+                                                <div class="prod-item__bottom">
+                                                    <div class="prod-item__price">от <span>800</span> руб. смена</div>
+                                                    <div class="prod-item__btn-block">
+                                                        <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
+                                                        <button class="prod-item__add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-compare-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                            </svg>
+                                                            <span>В сравнение</span>                                                        
+                                                        </button> 
+                                                    </div>                                                                                                   
+                                                </div>                                             
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="prod-item">
+                                            <div class="prod-item__category">
+                                                Бортовой манипулятор
+                                            </div>
+                                            <div class="prod-item__picture">
+                                                <div class="prod-item__img-wrap" href="#">
+                                                   <img class="prod-item__img" src="img/catalog/3.jpg" alt="Товар 3">
+                                                </div>
+                                                <div class="prod-item__tags">
+                                                    <!-- <div class="prod-item__tag prod-item__tag--discount">Скидка</div>
+                                                    <div class="prod-item__tag prod-item__tag--hit">Популярное</div> -->
+                                                </div>                                                
+                                            </div>
+                                            <div class="prod-item__content">
+                                                <div class="prod-item__info">
+                                                    <div class="prod-item__desc">
+                                                        <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78</a>
+                                                        <ul class="prod-item__feature">
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                    
+                                                            <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                   
+                                                        </ul>
+                                                    </div>                                                    
+                                                    <button type="button" class="prod-item__collaps-btn">
+                                                        <img src="img/more-btn.png" alt="иконка развернуть информацию">
+                                                    </button>
+                                                </div>                                                   
+                                                <div class="prod-item__bottom">
+                                                    <div class="prod-item__price">от <span>800</span> руб. смена</div>
+                                                    <div class="prod-item__btn-block">
+                                                        <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
+                                                        <button class="prod-item__add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-compare-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                            </svg>
+                                                            <span>В сравнение</span>                                                        
+                                                        </button> 
+                                                    </div>                                                                                                   
+                                                </div>                                             
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="main-catalog__promo promo-main">
+                                            <div class="promo-main__title">
+                                                Манипуляторы грузоподъемностью 3&nbsp;т.&nbsp;в&nbsp;нашем каталоге
+                                            </div>
+                                            <div class="promo-main__btn-block">
+                                                <a class="promo-main__btn main-btn" href="#">В каталог</a>
+                                            </div>
+                                            <div class="promo-main__img">
+                                                <img src="img/main/promo-1.jpg" alt="Каталог манипуляторов">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="prod-item">
+                                            <div class="prod-item__category">
+                                                Бортовой манипулятор
+                                            </div>
+                                            <div class="prod-item__picture">
+                                                <div class="prod-item__img-wrap" href="#">
+                                                   <img class="prod-item__img" src="img/catalog/4.jpg" alt="Товар 4">
+                                                </div>
+                                                <div class="prod-item__tags">
+                                                    <!-- <div class="prod-item__tag prod-item__tag--discount">Скидка</div>
+                                                    <div class="prod-item__tag prod-item__tag--hit">Популярное</div> -->
+                                                </div>                                                
+                                            </div>
+                                            <div class="prod-item__content">
+                                                <div class="prod-item__info">
+                                                    <div class="prod-item__desc">
+                                                        <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78</a>
+                                                        <ul class="prod-item__feature">
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                    
+                                                            <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                   
+                                                        </ul>
+                                                    </div>                                                    
+                                                    <button type="button" class="prod-item__collaps-btn">
+                                                        <img src="img/more-btn.png" alt="иконка развернуть информацию">
+                                                    </button>
+                                                </div>                                                   
+                                                <div class="prod-item__bottom">
+                                                    <div class="prod-item__price">от <span>800</span> руб. смена</div>
+                                                    <div class="prod-item__btn-block">
+                                                        <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
+                                                        <button class="prod-item__add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-compare-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                            </svg>
+                                                            <span>В сравнение</span>                                                        
+                                                        </button> 
+                                                    </div>                                                                                                   
+                                                </div>                                             
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="prod-item">
+                                            <div class="prod-item__category">
+                                                Бортовой манипулятор
+                                            </div>
+                                            <div class="prod-item__picture">
+                                                <div class="prod-item__img-wrap" href="#">
+                                                   <img class="prod-item__img" src="img/catalog/5.jpg" alt="Товар 5">
+                                                </div>
+                                                <div class="prod-item__tags">
+                                                    <!-- <div class="prod-item__tag prod-item__tag--discount">Скидка</div>
+                                                    <div class="prod-item__tag prod-item__tag--hit">Популярное</div> -->
+                                                </div>                                                
+                                            </div>
+                                            <div class="prod-item__content">
+                                                <div class="prod-item__info">
+                                                    <div class="prod-item__desc">
+                                                        <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78</a>
+                                                        <ul class="prod-item__feature">
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                    
+                                                            <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                   
+                                                        </ul>
+                                                    </div>                                                    
+                                                    <button type="button" class="prod-item__collaps-btn">
+                                                        <img src="img/more-btn.png" alt="иконка развернуть информацию">
+                                                    </button>
+                                                </div>                                                   
+                                                <div class="prod-item__bottom">
+                                                    <div class="prod-item__price">от <span>800</span> руб. смена</div>
+                                                    <div class="prod-item__btn-block">
+                                                        <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
+                                                        <button class="prod-item__add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-compare-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                            </svg>
+                                                            <span>В сравнение</span>                                                        
+                                                        </button> 
+                                                    </div>                                                                                                   
+                                                </div>                                             
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="prod-item">
+                                            <div class="prod-item__category">
+                                                Бортовой манипулятор проверка на переполнение
+                                            </div>
+                                            <div class="prod-item__picture">
+                                                <div class="prod-item__img-wrap" href="#">
+                                                   <img class="prod-item__img" src="img/catalog/1.jpg" alt="Товар 6">
+                                                </div>
+                                                <div class="prod-item__tags">
+                                                    <div class="prod-item__tag prod-item__tag--discount">Скидка</div>
+                                                    <div class="prod-item__tag prod-item__tag--hit">Популярное</div>
+                                                </div>                                                
+                                            </div>
+                                            <div class="prod-item__content">
+                                                <div class="prod-item__info">
+                                                    <div class="prod-item__desc">
+                                                        <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78 проверка на переполнение надписи</a>
+                                                        <ul class="prod-item__feature">
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                    
+                                                            <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                   
+                                                        </ul>
+                                                    </div>                                                    
+                                                    <button type="button" class="prod-item__collaps-btn">
+                                                        <img src="img/more-btn.png" alt="иконка развернуть информацию">
+                                                    </button>
+                                                </div>                                                   
+                                                <div class="prod-item__bottom">
+                                                    <div class="prod-item__price">от <span>100 000</span> руб. смена</div>
+                                                    <div class="prod-item__btn-block">
+                                                        <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
+                                                        <button class="prod-item__add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-compare-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                            </svg>
+                                                            <span>В сравнение</span>                                                        
+                                                        </button> 
+                                                    </div>                                                                                                   
+                                                </div>                                             
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-4 col-xl-3">
+                                        <div class="prod-item">
+                                            <div class="prod-item__category">
+                                                Бортовой манипулятор
+                                            </div>
+                                            <div class="prod-item__picture">
+                                                <div class="prod-item__img-wrap" href="#">
+                                                   <img class="prod-item__img" src="img/catalog/2.jpg" alt="Товар 7">
+                                                </div>
+                                                <div class="prod-item__tags">
+                                                    <!-- <div class="prod-item__tag prod-item__tag--discount">Скидка</div>
+                                                    <div class="prod-item__tag prod-item__tag--hit">Популярное</div> -->
+                                                </div>                                                
+                                            </div>
+                                            <div class="prod-item__content">
+                                                <div class="prod-item__info">
+                                                    <div class="prod-item__desc">
+                                                        <a class="prod-item__title" href="#">Манипулятор Hyundai HD&#8209;78</a>
+                                                        <ul class="prod-item__feature">
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                    
+                                                            <li><span>Тип стрелы:</span> Телескопическая</li>                                                    
+                                                            <li><span>Грузоподъемность борта:</span> 3т.</li>                                                    
+                                                            <li><span>Грузоподъёмность стрелы:</span> 2т.</li>                                                    
+                                                            <li><span>Длина:</span> 5 м.</li>                                                    
+                                                            <li><span>Ширина:</span> 2.1 м.</li>                                                   
+                                                        </ul>
+                                                    </div>                                                    
+                                                    <button type="button" class="prod-item__collaps-btn">
+                                                        <img src="img/more-btn.png" alt="иконка развернуть информацию">
+                                                    </button>
+                                                </div>                                                   
+                                                <div class="prod-item__bottom">
+                                                    <div class="prod-item__price">от <span>800</span> руб. смена</div>
+                                                    <div class="prod-item__btn-block">
+                                                        <a class="prod-item__btn border-btn link-modal-js" href="#modal-order">Заказать</a>
+                                                        <button class="prod-item__add-to-compare" type="button">
+                                                            <svg class="prod-item__add-to-compare-icon icon-svg">
+                                                                <use xlink:href="img/icons/sprite-icons.svg#compare"></use>
+                                                            </svg>
+                                                            <span>В сравнение</span>                                                        
+                                                        </button> 
+                                                    </div>                                                                                                   
                                                 </div>                                             
                                             </div>                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <a class="main-catalog__more-btn" href="#">
+                                Посмотреть все машины
+                            </a>
                         </div>
                     </section>
-                    
+                    <!-- End Catalog block -->                    
                 </div>
+
+                <!-- Promo block -->
+                <div class="main-page__wide-promo wide-promo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-xl-6">
+                                <div class="wide-promo__desc">
+                                    Один манипулятор может заменить кран, грузовой автомобиль и эвакуатор.<br>
+                                    За одну смену Вы сможете сэкономить<br>
+                                    <span>до 4600 руб.</span>
+                                </div>
+                                <a class="wide-promo__btn main-btn link-modal-js" href="#modal-call">Заказать машину</a>
+                            </div>
+                        </div>                        
+                    </div>                    
+                    <div class="wide-promo__img">
+                        <picture>
+                            <source media="(min-width:768px )" srcset="img/main/promo-wide.jpg">
+                            <img src="img/main/promo-wide-mob.jpg" alt="Вызов манипулятора">
+                        </picture>
+                        
+                    </div>
+                </div>  
+                <!-- End Promo block --> 
                 
+
+                <!-- Services block --> 
+                <section class="section main-services">
+                    <div class="container">
+                        <div class="section__title">
+                            <h2>Мы подобрали список самых популярных видов работ, которые выполняются с помощью наших манипуляторов</h2>                            
+                        </div>
+                        <p>В нашем парке, собрана техника грузоподъемностью от 3 До 15, которая может заменить кран, грузовой автомобиль и эвакуатор, благодаря чему Вы сможете сэкономить до 
+                            4600 руб за смену. Наши водители благодаря своему опыту могут решить сложные задачи и Вам не придется переплачивать за дополнительные услуги.</p>
+                    </div>
+                    <div class="slider-wrapper">
+                        <div class="container">
+                            <div class="services-block">
+                                <div class="services-block__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="services-block__item">
+                                                <div class="services-block__picture">
+                                                    <div class="services-block__img">
+                                                        <img src="img/main/services-1.jpg" alt="Перевозка бытовок">
+                                                    </div>
+                                                </div>                                            
+                                                <div class="services-block__bottom">
+                                                    <div class="services-block__desc">
+                                                        Перевозка бытовок, вагончиков и&nbsp;блок-контейнеров
+                                                    </div>
+                                                    <a class="services-block__btn some-btn link-modal-js" href="#modal-call">Заказать</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="services-block__item">
+                                                <div class="services-block__picture">
+                                                    <div class="services-block__img">
+                                                        <img src="img/main/services-2.jpg" alt="Перевозка техники">
+                                                    </div>
+                                                </div>                                            
+                                                <div class="services-block__bottom">
+                                                    <div class="services-block__desc">
+                                                        Перевозка различной техники и&nbsp;механизмов
+                                                    </div>
+                                                    <a class="services-block__btn some-btn link-modal-js" href="#modal-call">Заказать</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="services-block__item">
+                                                <div class="services-block__picture">
+                                                    <div class="services-block__img">
+                                                        <img src="img/main/services-3.jpg" alt="Перевозка бытовок">
+                                                    </div>
+                                                </div>                                            
+                                                <div class="services-block__bottom">
+                                                    <div class="services-block__desc">
+                                                        Погрузка, разгрузка и&nbsp;перестановка тяжелых объектов
+                                                    </div>
+                                                    <a class="services-block__btn some-btn link-modal-js" href="#modal-call">Заказать</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-slider-pagination services-block__slider-pagination"></div>
+                                </div>
+                                <div class="custom-slider-btn services-block__slider-btn">
+                                    <div class="custom-slider-btn-prev services-block__slider-btn-prev swiper-button-prev">                                   
+                                    </div>
+                                    <div class="custom-slider-btn-next services-block__slider-btn-next swiper-button-next">
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="container">
+                        <div class="services-callback">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="services-callback__text">
+                                        <p><b>Выберите вид работы и&nbsp;оставьте заявку.</b> Наш менеджер сразу перезвонит и&nbsp;подскажет, какой манипултор Вам подойдет.<br> Если Вас интересует другая услуга или долгострочное сотрудничество, то&nbsp;просто оставьте заявку или позвоните нам.</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 d-none d-lg-block">
+                                    <div class="services-callback__arrow">
+                                        <svg class="icon-svg">
+                                            <use xlink:href="img/icons/sprite-icons.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="services-callback__phone-block">
+                                        <div class="services-callback__phone-block-top">
+                                            <div class="services-callback__img">
+                                                <img src="img/avatar.jpg" alt="Консультант">
+                                            </div>
+                                            <div class="services-callback__time">Работаем 24/7</div>
+                                            <a class="services-callback__phone" href="tel:89214328888">8 (921) 432-88-88</a>
+                                        </div>
+                                        <a class="services-callback__btn main-btn link-modal-js" href="#modal-call">Заказать звонок</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services-promo">
+                            <div class="row justify-content-end">
+                                <div class="col-lg-6">
+                                    <div class="services-promo__content">
+                                        <div class="services-promo__title">
+                                            Мы&nbsp;работаем на&nbsp;рынке с&nbsp;2014 года и&nbsp;сдаем технику в&nbsp;среднем <span>дешевле на&nbsp;16%,</span> чем конкуренты
+                                        </div>
+                                        <p>В&nbsp;нашем парке современные и&nbsp;новые машины японского и&nbsp;корейского производства, которые обеспечивают максимальную надежность при выполнении сложных работ. Работаем по&nbsp;Санкт-Петербург и&nbsp;Ленинградской области в&nbsp;радиусе 200&nbsp;км.&nbsp;от&nbsp;КАД.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="services-promo__img">
+                                <img src="img/main/services-promo.jpg" alt="Экономия при заказе у нас">
+                            </div>
+                        </div>
+                    </div>
+                        
+                </section>
+                <!-- End Services block --> 
+
+                             
             </main>
             <footer class="footer">
     <div class="container">
