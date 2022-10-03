@@ -61,4 +61,10 @@ window.onload = function () {
 		},
 	});
 
+	// Аккардион FAQ
+	$('.faq__btn').click(function(){	 
+		$(this).toggleClass('active');	
+		$(this).parent().next().slideToggle();	
+	});
+
 }

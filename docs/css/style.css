@@ -4187,6 +4187,7 @@
 :root {
   --bg-color: #fff;
   --bg-grey: #F5F5F5;
+  --bg-grey-2: #F9F9F9;
   --bg-dark: #222222;
   --bg-black: #292929;
   --main-color-font: #000000;
@@ -4321,26 +4322,56 @@ h3, .h3 {
   font-weight: 400;
   margin-bottom: 1em;
 }
+@media (max-width: 991px) {
+  h3, .h3 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 767px) {
+  h3, .h3 {
+    font-size: 26px;
+  }
+}
 
 h4, .h4 {
   font-family: "RussoOne", sans-serif;
   font-size: 28px;
   font-weight: 400;
-  margin-bottom: 0.7em;
+  margin-bottom: 1.2em;
+}
+@media (max-width: 991px) {
+  h4, .h4 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  h4, .h4 {
+    font-size: 24px;
+  }
 }
 
 h5, .h5 {
   font-family: "RussoOne", sans-serif;
   font-size: 26px;
   font-weight: 400;
-  margin-bottom: 0.8em;
+  margin-bottom: 1.2em;
+}
+@media (max-width: 991px) {
+  h5, .h5 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  h5, .h5 {
+    font-size: 22px;
+  }
 }
 
 h6, .h6 {
   font-family: "RussoOne", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  margin-bottom: 0.7em;
+  margin-bottom: 1em;
 }
 
 p {
@@ -4362,7 +4393,7 @@ p {
 }
 
 .section {
-  padding: 65px 0;
+  padding: 100px 0 85px;
 }
 @media (max-width: 991px) {
   .section {
@@ -4389,6 +4420,10 @@ p {
   width: 52px;
   height: 4px;
   background-color: var(--accent-color);
+}
+
+.section--bg {
+  background-color: var(--bg-grey-2);
 }
 
 .phone-block {
@@ -4431,9 +4466,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   transition: all 0.15s ease-in;
 }
 .main-btn:hover {
+  color: var(--accent-color);
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
 }
@@ -4449,6 +4486,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   transition: all 0.15s ease-in;
 }
 .border-btn:hover {
@@ -4466,11 +4504,32 @@ p {
   line-height: 1.5;
   font-weight: 600;
   text-align: center;
+  cursor: pointer;
   transition: all 0.15s ease-in;
 }
 .some-btn:hover {
   background-color: var(--accent-color);
   color: var(--bg-color);
+}
+
+.big-btn {
+  display: block;
+  width: 100%;
+  border: 1px solid #A9A9A9;
+  padding: 18px 10px;
+  color: #595E68;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+.big-btn:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .messenger-link {
@@ -4562,6 +4621,39 @@ main ol:not([class]) li::before {
 }
 .custom-slider-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 32px;
+  font-size: 18px;
+  line-height: 1.66;
+}
+@media (max-width: 767px) {
+  .check-list li {
+    font-size: 16px;
+  }
+}
+.check-list li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(50%);
+  width: 13px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2L5.125 9L2 5.81818' stroke='%23ED1C24' stroke-width='2' stroke-miterlimit='10' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-input {
+  font-size: 14px;
+  color: #8C8C8C;
+  padding: 22px 20px;
+  border: 1px solid #E2E2E2;
+  background-color: var(--bg-color);
+  width: 100%;
 }
 
 .header {
@@ -5028,7 +5120,7 @@ main ol:not([class]) li::before {
   }
 }
 .main-page__wide-promo {
-  margin: 35px 0;
+  margin-top: 15px;
 }
 
 .hero {
@@ -5378,22 +5470,11 @@ main ol:not([class]) li::before {
   }
 }
 
-.main-catalog__more-btn {
-  display: block;
-  width: 100%;
-  border: 1px solid #A9A9A9;
-  padding: 18px 10px;
-  color: #595E68;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 40px;
-  transition: all 0.15s ease-in;
+.main-catalog {
+  padding-top: 65px;
 }
-.main-catalog__more-btn:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+.main-catalog__more-btn {
+  margin-top: 40px;
 }
 
 .prod-item {
@@ -5781,6 +5862,11 @@ main ol:not([class]) li::before {
   font-size: 24px;
   line-height: 1.2;
 }
+@media (max-width: 575px) {
+  .services-callback__phone {
+    font-size: 20px;
+  }
+}
 .services-callback__btn {
   font-size: 18px;
   line-height: 1.1;
@@ -5861,4 +5947,376 @@ main ol:not([class]) li::before {
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
   }
+}
+
+.benefits-list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.benefits-list li {
+  position: relative;
+  padding-left: 41px;
+  margin-bottom: 10px;
+}
+.benefits-list li svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  color: var(--accent-color);
+}
+
+.completed-work__item {
+  background-color: var(--bg-color);
+}
+.completed-work__picture {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-bottom: 53%;
+}
+.completed-work__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.completed-work__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.completed-work__bottom {
+  padding: 20px 20px 20px 30px;
+}
+@media (max-width: 1199px) {
+  .completed-work__bottom {
+    padding: 20px 10px;
+  }
+}
+.completed-work__title {
+  font-family: "RussoOne", sans-serif;
+  font-size: 18px;
+  line-height: 1.44;
+}
+@media (max-width: 575px) {
+  .completed-work__title {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .completed-work__btn {
+    font-size: 12px;
+  }
+}
+.completed-work__more-btn {
+  margin-bottom: 50px;
+}
+.completed-work__more-btn svg {
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  margin-left: 9px;
+}
+
+.reviews__top {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+}
+.reviews__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.reviews__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reviews__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--accent-color);
+}
+.reviews__play svg {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+.reviews__title {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 14px;
+}
+
+.border-block {
+  border: 2px solid var(--accent-color);
+}
+.border-block__subtitle {
+  font-family: "RussoOne", sans-serif;
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+@media (max-width: 767px) {
+  .border-block__subtitle {
+    font-size: 18px;
+  }
+}
+.border-block__top {
+  padding: 41px 55px 47px;
+}
+@media (max-width: 767px) {
+  .border-block__top {
+    padding: 20px 15px;
+  }
+}
+.border-block__bottom {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .border-block__bottom {
+    font-size: 12px;
+  }
+}
+
+.faq__question {
+  margin-top: 10px;
+}
+.faq__question:first-child {
+  margin-top: 0;
+}
+.faq__btn {
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  background-color: var(--bg-color);
+  padding: 22px 45px 22px 85px;
+}
+@media (max-width: 575px) {
+  .faq__btn {
+    padding: 16px 30px 16px 45px;
+  }
+}
+.faq__btn::before {
+  content: "?";
+  font-size: 25px;
+  color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E2E2E2;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  transition: all 0.15s ease-in;
+}
+@media (max-width: 575px) {
+  .faq__btn::before {
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+  }
+}
+.faq__btn::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid var(--grey);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  z-index: 1;
+  transition: all 0.15s ease-in;
+}
+@media (max-width: 575px) {
+  .faq__btn::after {
+    right: 5px;
+  }
+}
+.faq__btn.active::before {
+  background-color: var(--accent-color);
+}
+.faq__btn.active::after {
+  border-top: none;
+  border-bottom: 8px solid var(--accent-color);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.faq__answer {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px 44px 15px 85px;
+}
+@media (max-width: 575px) {
+  .faq__answer {
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.questions-form {
+  background-color: var(--bg-color);
+  padding: 36px 40px;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .questions-form {
+    padding: 25px 15px;
+  }
+}
+.questions-form__title {
+  font-family: "RussoOne", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+.questions-form__text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 17px;
+}
+.questions-form__person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-left: 3px solid var(--accent-color);
+  background-color: rgba(237, 28, 36, 0.1);
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+.questions-form__img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.questions-form__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.questions-form__person-info {
+  text-align: left;
+  font-size: 13px;
+  color: var(--accent-color);
+}
+.questions-form__person-info span {
+  display: block;
+  font-family: "RussoOne", sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--main-color-font);
+  margin-top: 5px;
+}
+.questions-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .questions-form__inputs {
+    flex-direction: row;
+  }
+}
+.questions-form__btn {
+  width: 100%;
+  padding: 19px;
+}
+.questions-form__policy {
+  color: #8C8C8C;
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.main-contacts__info {
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+  padding: 0 10px;
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .main-contacts__info {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 575px) {
+  .main-contacts__info {
+    gap: 20px;
+  }
+}
+.main-contacts__caption {
+  color: var(--grey);
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  position: relative;
+}
+.main-contacts__caption svg {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: var(--accent-color);
+  width: 15px;
+  height: 15px;
+  margin-right: 12px;
+}
+.main-contacts__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+.main-contacts__link {
+  color: var(--main-color-font);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.main-contacts__bottom {
+  font-size: 16px;
+}
+.main-contacts__bottom ul li {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.main-contacts__subtitle {
+  font-family: "RussoOne", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  padding-left: 30px;
 }
