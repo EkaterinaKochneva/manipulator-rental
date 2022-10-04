@@ -61,6 +61,67 @@ window.onload = function () {
 		},
 	});
 
+	const swiperProductThumbs = new Swiper('.product-thumbs__swiper', {
+
+		slidesPerView: 'auto',
+		spaceBetween: 8,
+
+	});
+	const swiperProduct = new Swiper('.product-slider__swiper', {
+
+		slidesPerView: 1,
+		draggable: true,
+
+		navigation: {
+			hide: false,
+			nextEl: '.product-slider__btn-next',
+			prevEl: '.product-slider__btn-prev',
+		  },
+
+		thumbs: {
+			swiper: swiperProductThumbs,
+		  },
+	});
+
+	const swiperProducts = new Swiper('.products-slider', {
+
+		slidesPerView: 1,
+		draggable: true,
+		loop: true,
+		breakpoints: {
+			1199: {
+				slidesPerView: 4,
+				spaceBetween: 30,
+				autoHeight: true,
+			},
+			991: {
+				slidesPerView: 3,
+				autoHeight: true,
+			},
+			767: {
+				slidesPerView: 2,	
+				autoHeight: true,				
+			},
+			575: {
+				autoHeight: true,	
+			}
+		},
+
+		pagination: {
+			el: '.products-slider__pagination',
+			clickable: true,
+		},
+
+		navigation: {
+			hide: false,
+			nextEl: '.products-slider__btn-next',
+			prevEl: '.products-slider__btn-prev',
+		  },
+
+	});
+
+
+
 	// Аккардион FAQ
 	$('.faq__btn').click(function(){	 
 		$(this).toggleClass('active');	
