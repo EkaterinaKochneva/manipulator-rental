@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>О компании</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__top top-header">
+        <div class="container">
+            <div class="row top-header__row">
+                <div class="col-6 col-lg-3 d-none d-md-block">
+                    <a class="top-header__cities link-modal-js" href="#city-choice" data-da=".bottom-header__content,767,5">
+                        <svg class="top-header__icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#navigation"></use>
+                        </svg>
+                        Санкт-Петербург                        
+                    </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-5 d-none d-lg-block">
+                    <div class="top-header__location">
+                        <svg class="top-header__icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                        </svg>
+                        Всеволжский р-н, дер Новосаратовка, Покровская дорога, дом 3  
+                    </div>
+                </div>
+                <div class="col-3 col-xl-2 d-none d-lg-block">
+                    <a class="top-header__email" href="mailto:support@autoom.ru">
+                        <svg class="top-header__icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#email"></use>
+                        </svg>
+                        support@autoom.ru
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-5 col-lg-2 order-last order-sm-0">
+                    <div class="top-header__messengers">
+                        <button class="top-header__search-mobile d-lg-none" type="button">
+                        </button>
+                        <a class="messenger-link d-lg-none" href="mailto:support@autoom.ru">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#email"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link d-sm-none" href="#modal-call">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-2 col-md-auto d-lg-none top-header__burger-col">
+                    <button class="body-header__menu-mobile" type="button">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__body body-header">
+        <div class="container">
+            <div class="row body-header__row">
+                <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3" data-da=".top-header__row,767,1">
+                    <div class="body-header__logo">
+                        <div class="body-header__logo-img">
+                            <img src="img/logo.png" alt="Логотип компании">
+                        </div>                        
+                        <span class="body-header__slogan">Аренда манипуляторов в&nbsp;Санкт-Петербурге</span>
+                    </div>
+                </div>
+                <div class="order-last order-lg-0 col-lg-3 col-xl-5">
+                    <div class="body-header__search header-search">
+                        <form role="search" class="header-search__form search-form" action="#" method="get">
+                            <button class="header-search__btn">
+                                <svg class="header-search__icon icon-svg">
+                                  <use xlink:href="img/icons/sprite-icons.svg#search"></use>
+                                </svg>
+                            </button>
+                            <div class="header-search__input-wrap">
+                                <div class="header-search__input-wrap">
+                                    <input class="header-search__input" name="search" type="text" placeholder="Поиск по машинам" autocomplete="off"/>
+                                </div>
+                            </div>
+                      </form>                      
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block">
+                    <div class="body-header__working-mode">
+                        Работаем 24/7
+                    </div>
+                    <a class="body-header__tel" href="tel:89214328888" data-da=".top-header__messengers,575,0">8 (921) 432-88-88</a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-none d-sm-block">
+                    <a class="body-header__btn main-btn link-modal-js" href="#modal-call">Заказать звонок</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom bottom-header"> 
+        <div class="bottom-header__content container">
+            <nav class="bottom-header__nav header-nav">                
+                <ul class="header-nav__list">
+                    <!-- Активный пункт меню/текущая страница должны быть в span, с классом active -->
+                    <li class="header-nav__item activ">
+                        <a class="header-nav__link" href="/">Главная</a>                                                 
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Каталог машин</a>                                                 
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Услуги и цены</a>                                                 
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Выполненные работы</a>                                                 
+                    </li>                    
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">О компании</a> 
+                        <svg class="header-nav__link-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                        </svg>
+                        <div class="header-nav__submenu">
+                            <ul class="header-nav__sublist">
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 1</a></li>
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 2</a></li>
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 3</a></li>
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 4</a></li>
+                            </ul>
+                        </div>                                                
+                    </li>                    
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Контакты</a>                                                 
+                    </li>                    
+                </ul>
+            </nav>
+        </div>     
+    </div>
+</header>
+            <main class="page">
+                <!-- Breadcrumbs-->
+                <nav class="breadcrumbs" aria-label="breadcrumb">
+                    <div class="container">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>                                  
+                            <li class="breadcrumbs__item">
+                                <span>О нас</span>
+                            </li>                                    
+                        </ol>     
+                    </div>                           
+                </nav>
+                <!-- END Breadcrumbs -->  
+                <div class="container">
+                    <div class="page__row">
+                        <aside class="page__sidebar sidebar">
+                            <nav class="sidebar__menu menu-sidebar">
+                                <ul class="menu-sidebar__list">
+                                    <!-- Активный пункт меню/текущая страница должны быть в span с классом active -->
+                                    <li class="menu-sidebar__item">
+                                        <span class="menu-sidebar__link active">О нас</span>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                    
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Гарантии</a>
+                                    </li>                                    
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Контакты</a>
+                                    </li>  
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Доставка</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">F.A.Q.</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
+                        <div class="page__body">
+                            <div class="section__title">
+                                <h1>О нас</h1>                            
+                            </div>
+                            <div class="about-info">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="about-info__img">
+                                            <picture>
+                                                <source type="image/webp" srcset="img/about/about.webp">
+                                                <img src="img/about/about.jpg" alt="Синий манипулятор">
+                                            </picture>                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-6 ps-xl-5">
+                                        <div class="about-info__block">
+                                            <div class="about-info__item">
+                                                <svg class="about-info__icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#manipulator"></use>
+                                                </svg>
+                                                <div class="about-info__more">
+                                                    более
+                                                </div>
+                                                <div class="about-info__number">
+                                                    45 <span>машин</span> 
+                                                </div>
+                                                <div class="about-info__text">
+                                                    в парке
+                                                </div>
+                                            </div>
+                                            <div class="about-info__item">
+                                                <svg class="about-info__icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#contract"></use>
+                                                </svg>
+                                                <div class="about-info__more">
+                                                    более
+                                                </div>
+                                                <div class="about-info__number">
+                                                    120
+                                                </div>
+                                                <div class="about-info__text">
+                                                    заказов ежедневно
+                                                </div>
+                                            </div>
+                                            <div class="about-info__item">
+                                                <svg class="about-info__icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#hands"></use>
+                                                </svg>
+                                                <div class="about-info__more">
+                                                    более
+                                                </div>
+                                                <div class="about-info__number">
+                                                    70
+                                                </div>
+                                                <div class="about-info__text">
+                                                    сотрудников в штате
+                                                </div>
+                                            </div>
+                                            <div class="about-info__item">
+                                                <svg class="about-info__icon icon-svg">
+                                                    <use xlink:href="img/icons/sprite-icons.svg#people"></use>
+                                                </svg>
+                                                <div class="about-info__more">
+                                                    более
+                                                </div>
+                                                <div class="about-info__number">
+                                                    40
+                                                </div>
+                                                <div class="about-info__text">
+                                                    постоянных покупателей
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="page__content">
+                                <p>Аренда автовышки 12 м Hyundai чаще всего требуется для выполнения работ на уровне 2-4 этажа. Эта спецтехника относится к наиболее низким автогидроподъёмникам. В предложенной модели телескопический подъемный механизм установлен на шасси грузового автомобиля Hyundai, отличающегося хорошей маневренностью на ограниченных по площади участках.</p>
+                            </div>
+                            <div class="our-team">
+                                    <h2>Сотрудники</h2>
+                                <div class="team">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="team__item">
+                                                <div class="team__img-block">
+                                                    <div class="team__img-wrap">
+                                                        <img class="team__img" src="img/about/team-1.jpg" alt="Сотрудник 1">
+                                                    </div>                                                
+                                                </div>
+                                                <div class="team__name">Сучилин Алексей</div>
+                                                <div class="team__position">Генеральный директор</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="team__item">
+                                                <div class="team__img-block">
+                                                    <div class="team__img-wrap">
+                                                        <img class="team__img" src="img/about/team-2.jpg" alt="Сотрудник 2">
+                                                    </div>                                                
+                                                </div>
+                                                <div class="team__name">Сучилин Алексей</div>
+                                                <div class="team__position">Генеральный директор</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="team__item">
+                                                <div class="team__img-block">
+                                                    <div class="team__img-wrap">
+                                                        <img class="team__img" src="img/about/team-3.jpg" alt="Сотрудник 3">
+                                                    </div>                                                
+                                                </div>
+                                                <div class="team__name">Сучилин Алексей</div>
+                                                <div class="team__position">Генеральный директор</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="team__item">
+                                                <div class="team__img-block">
+                                                    <div class="team__img-wrap">
+                                                        <img class="team__img" src="img/about/team-4.jpg" alt="Сотрудник 4">
+                                                    </div>                                                
+                                                </div>
+                                                <div class="team__name">Сучилин Алексей</div>
+                                                <div class="team__position">Генеральный директор</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="our-certificates">
+                                <h2>Сертификаты и благодврственные письма</h2>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-1.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-1.jpg" alt="сертификат 1">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-2.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-2.jpg" alt="сертификат 2">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-3.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-3.jpg" alt="сертификат 3">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-4.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-4.jpg" alt="сертификат 4">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-5.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-5.jpg" alt="сертификат 5">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-6.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-6.jpg" alt="сертификат 6">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-7.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-7.jpg" alt="сертификат 7">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="our-certificates__item">
+                                            <div class="our-certificates__img-block">
+                                                <a class="our-certificates__img-wrap" href="img/about/certificates-8.jpg" data-fancybox="certificates">
+                                                    <img class="our-certificates__img" src="img/about/certificates-8.jpg" alt="сертификат 8">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                       
+                            
+                        </div>
+                    </div>                    
+
+                </div><!-- /container --> 
+                
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="row footer__row gy-4">
+            <div class="col-sm-6 col-lg-4 footer__logo-col">
+                <div class="footer__logo">
+                    <div class="footer__logo-img">
+                        <img src="img/logo.png" alt="Логотип компании в футере">
+                    </div>                        
+                    <span class="footer__slogan">Аренда манипуляторов в&nbsp;Санкт-Петербурге</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 footer__info-col">
+                <div class="footer__info">
+                    <p>ООО Спецтехника Северной Столицы</p>
+                    <p>ОГРН 686457863598</p>
+                    <p>ИНН 673583745693</p>
+                    <p>КПП 7465486553</p>
+                </div>
+                <div class="footer__nk-link">
+                    Разработан в <a href="https://newclients1.ru/" target="_blank">Новые&nbsp;клиенты</a>  
+                </div>
+            </div>
+            <div class="col-lg-3 footer__contacts-col">
+                <div class="footer__contacts">
+                    <div class="footer__working-mode">
+                        Работаем 24/7
+                    </div>
+                    <a class="footer__tel" href="tel:89214328888">8 (921) 432-88-88</a>
+                    <a class="footer__callback link-modal-js" href="#modal-call">Заказать звонок</a>
+                    <div class="footer__messengers">
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#viber"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/dynamic_adapt.js"></script>
+<script src="libs/fancybox.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script> 
+        </div>   
+    </body>
+</html>
