@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+	<title>Контакты</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="libs/fancybox.min.css"/>
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="header__top top-header">
+        <div class="container">
+            <div class="row top-header__row">
+                <div class="col-6 col-lg-3 d-none d-md-block">
+                    <a class="top-header__cities link-modal-js" href="#city-choice" data-da=".bottom-header__content,767,5">
+                        <svg class="top-header__icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#navigation"></use>
+                        </svg>
+                        Санкт-Петербург                        
+                    </a>
+                </div>
+                <div class="col-6 col-lg-4 col-xl-5 d-none d-lg-block">
+                    <div class="top-header__location">
+                        <svg class="top-header__icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#location"></use>
+                        </svg>
+                        Всеволжский р-н, дер Новосаратовка, Покровская дорога, дом 3  
+                    </div>
+                </div>
+                <div class="col-3 col-xl-2 d-none d-lg-block">
+                    <a class="top-header__email" href="mailto:support@autoom.ru">
+                        <svg class="top-header__icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#email"></use>
+                        </svg>
+                        support@autoom.ru
+                    </a>
+                </div>
+                <div class="col-sm-4 col-md-5 col-lg-2 order-last order-sm-0">
+                    <div class="top-header__messengers">
+                        <button class="top-header__search-mobile d-lg-none" type="button">
+                        </button>
+                        <a class="messenger-link d-lg-none" href="mailto:support@autoom.ru">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#email"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link d-sm-none" href="#modal-call">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#phone"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#telegram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-2 col-md-auto d-lg-none top-header__burger-col">
+                    <button class="body-header__menu-mobile" type="button">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__body body-header">
+        <div class="container">
+            <div class="row body-header__row">
+                <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3" data-da=".top-header__row,767,1">
+                    <div class="body-header__logo">
+                        <div class="body-header__logo-img">
+                            <img src="img/logo.png" alt="Логотип компании">
+                        </div>                        
+                        <span class="body-header__slogan">Аренда манипуляторов в&nbsp;Санкт-Петербурге</span>
+                    </div>
+                </div>
+                <div class="order-last order-lg-0 col-lg-3 col-xl-5">
+                    <div class="body-header__search header-search">
+                        <form role="search" class="header-search__form search-form" action="#" method="get">
+                            <button class="header-search__btn">
+                                <svg class="header-search__icon icon-svg">
+                                  <use xlink:href="img/icons/sprite-icons.svg#search"></use>
+                                </svg>
+                            </button>
+                            <div class="header-search__input-wrap">
+                                <div class="header-search__input-wrap">
+                                    <input class="header-search__input" name="search" type="text" placeholder="Поиск по машинам" autocomplete="off"/>
+                                </div>
+                            </div>
+                      </form>                      
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block">
+                    <div class="body-header__working-mode">
+                        Работаем 24/7
+                    </div>
+                    <a class="body-header__tel" href="tel:89214328888" data-da=".top-header__messengers,575,0">8 (921) 432-88-88</a>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2 d-none d-sm-block">
+                    <a class="body-header__btn main-btn link-modal-js" href="#modal-call">Заказать звонок</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom bottom-header"> 
+        <div class="bottom-header__content container">
+            <nav class="bottom-header__nav header-nav">                
+                <ul class="header-nav__list">
+                    <!-- Активный пункт меню/текущая страница должны быть в span, с классом active -->
+                    <li class="header-nav__item activ">
+                        <a class="header-nav__link" href="/">Главная</a>                                                 
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Каталог машин</a>                                                 
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Услуги и цены</a>                                                 
+                    </li>
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Выполненные работы</a>                                                 
+                    </li>                    
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">О компании</a> 
+                        <svg class="header-nav__link-icon icon-svg">
+                            <use xlink:href="img/icons/sprite-icons.svg#triangle"></use>
+                        </svg>
+                        <div class="header-nav__submenu">
+                            <ul class="header-nav__sublist">
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 1</a></li>
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 2</a></li>
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 3</a></li>
+                                <li class="header-nav__subitem"><a class="header-nav__sublink" href="#">Подменю 4</a></li>
+                            </ul>
+                        </div>                                                
+                    </li>                    
+                    <li class="header-nav__item">
+                        <a class="header-nav__link" href="#">Контакты</a>                                                 
+                    </li>                    
+                </ul>
+            </nav>
+        </div>     
+    </div>
+</header>
+            <main class="page">
+                <!-- Breadcrumbs-->
+                <nav class="breadcrumbs" aria-label="breadcrumb">
+                    <div class="container">
+                        <ol class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="/">Главная</a>
+                            </li>                                  
+                            <li class="breadcrumbs__item">
+                                <span>Контакты</span>
+                            </li>                                    
+                        </ol>     
+                    </div>                           
+                </nav>
+                <!-- END Breadcrumbs -->  
+                <div class="container">
+                    <div class="page__row">
+                        <aside class="page__sidebar sidebar">
+                            <nav class="sidebar__menu menu-sidebar">
+                                <ul class="menu-sidebar__list">
+                                    <!-- Активный пункт меню/текущая страница должны быть в span с классом active -->
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">О нас</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                    
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Гарантии</a>
+                                    </li>                                    
+                                    <li class="menu-sidebar__item">
+                                        <span class="menu-sidebar__link active">Контакты</span>
+                                    </li>  
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">Доставка</a>
+                                    </li>
+                                    <li class="menu-sidebar__item">
+                                        <a class="menu-sidebar__link" href="#">F.A.Q.</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
+                        <div class="page__body">
+                            <div class="section__title">
+                                <h1>Контакты</h1>                            
+                            </div>
+                            <div class="page__contacts contacts">
+                                <div class="row gy-4">
+                                    <div class="col-lg-6">
+                                        <div class="contacts__map">
+                                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A03bfcafe254f41ff5e2a1e8f8b3ba172e318bd9c2e29517f9fadf65adea06cb8&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 ps-xl-4">
+                                        <div class="tabs main-tabs">
+                                            <div class="tabs__caption main-tabs__caption">
+                                                <button class="tabs__btn main-tabs__btn active" type="button">Контакты</button>
+                                                <button class="tabs__btn main-tabs__btn" type="button">Реквизиты для юр.лиц</button>
+                                            </div>
+                                            <div class="tabs__wrap  main-tabs__wrap">
+                                                <div class="tabs__content main-tabs__content active">
+                                                    <div class="contacts__info contacts-info">
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                <svg class="contacts-info__title-icon icon-svg">
+                                                                    <use xlink:href="img/icons/sprite-icons.svg#phone-3"></use>
+                                                                </svg>
+                                                                Телефон
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                <a class="contacts-info__link" href="tel:89214328888" >8 (921) 432-88-88</a>
+                                                                <div class="contacts-info__messenger">
+                                                                    <a class="messenger-link" href="#">
+                                                                        <svg class="icon-svg">
+                                                                            <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                                                                        </svg>
+                                                                    </a>
+                                                                    <a class="messenger-link" href="#">
+                                                                        <svg class="icon-svg">
+                                                                            <use xlink:href="img/icons/sprite-icons.svg#telegram"></use>
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>                                                                
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                <svg class="contacts-info__title-icon icon-svg">
+                                                                    <use xlink:href="img/icons/sprite-icons.svg#email-2"></use>
+                                                                </svg>
+                                                                Email
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                <a class="contacts-info__link" href="mailto:support@autoom.ru" >support@autoom.ru</a>
+                                                                <span>Заказы</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                <svg class="contacts-info__title-icon icon-svg">
+                                                                    <use xlink:href="img/icons/sprite-icons.svg#clock"></use>
+                                                                </svg>
+                                                                Режим работы
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                пн-пт 9:00-18:00 <br>
+                                                                сб-вс 10:00-18:00
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                <svg class="contacts-info__title-icon icon-svg">
+                                                                    <use xlink:href="img/icons/sprite-icons.svg#location-2"></use>
+                                                                </svg>
+                                                                Адрес стоянки
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                Всеволжский р-н, дер. Новосаратовка, Покровская дорога, дом 3
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                <svg class="contacts-info__title-icon icon-svg">
+                                                                    <use xlink:href="img/icons/sprite-icons.svg#coordinate"></use>
+                                                                </svg>
+                                                                Координаты для навигатора
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                59.847774, 30.511961
+                                                            </div>
+                                                        </div>                                                            
+                                                    </div>                                                    
+                                                </div> 
+                                                <div class="tabs__content main-tabs__content">
+                                                    <div class="contacts__info contacts-info">
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                ИНН
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                123456789
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                КПП
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                123456789123456789
+                                                            </div>
+                                                        </div>
+                                                        <div class="contacts-info__row">
+                                                            <div class="contacts-info__title">
+                                                                ОГРН
+                                                            </div>
+                                                            <div class="contacts-info__text">
+                                                                123456789123456789
+                                                            </div>
+                                                        </div>                                          
+                                                    </div>  
+                                                </div> 
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="page__bottom-content">
+                                <h2>Как добраться</h2>
+                                <p>Походный проезд, д. 4, корп. 1, 4-й этаж, офис 412. С Волоколамского шоссе поворот на Походный проезд (повернуть можно как при движении из центра (направо по стрелке, так и при движении в центр от МКАДА первый светофор, налево на стрелку). Далее, по Походному проезду, проезжаем круговое движение и не доезжая 50 метров до светофора (пешеходный переход), поворот направо, далее через шлагбаум, проезд в конец здания на гостевую парковку. Вход в бизнес центр Тушино. Убедительно просим заранее звонить, для заказа пропуска на автомобиль!</p>
+                                <div class="gallery">
+                                    <div class="row gy-4">
+                                        <div class="col-sm-6">
+                                            <div class="gallery__item">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/contacts/contacts-1.webp">
+                                                    <img class="gallery__img" src="img/contacts/contacts-1.jpg" alt="Фото магазина">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="gallery__item">
+                                                <picture>
+                                                    <source type="image/webp" srcset="img/contacts/contacts-2.webp">
+                                                    <img class="gallery__img" src="img/contacts/contacts-2.jpg" alt="Фото магазина">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>                                                                                       
+                                </div>
+                            </div>  
+                        </div>
+                    </div>                    
+
+                </div><!-- /container --> 
+                
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="row footer__row gy-4">
+            <div class="col-sm-6 col-lg-4 footer__logo-col">
+                <div class="footer__logo">
+                    <div class="footer__logo-img">
+                        <img src="img/logo.png" alt="Логотип компании в футере">
+                    </div>                        
+                    <span class="footer__slogan">Аренда манипуляторов в&nbsp;Санкт-Петербурге</span>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-5 footer__info-col">
+                <div class="footer__info">
+                    <p>ООО Спецтехника Северной Столицы</p>
+                    <p>ОГРН 686457863598</p>
+                    <p>ИНН 673583745693</p>
+                    <p>КПП 7465486553</p>
+                </div>
+                <div class="footer__nk-link">
+                    Разработан в <a href="https://newclients1.ru/" target="_blank">Новые&nbsp;клиенты</a>  
+                </div>
+            </div>
+            <div class="col-lg-3 footer__contacts-col">
+                <div class="footer__contacts">
+                    <div class="footer__working-mode">
+                        Работаем 24/7
+                    </div>
+                    <a class="footer__tel" href="tel:89214328888">8 (921) 432-88-88</a>
+                    <a class="footer__callback link-modal-js" href="#modal-call">Заказать звонок</a>
+                    <div class="footer__messengers">
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#telegram"></use>
+                            </svg>
+                        </a>
+                        <a class="messenger-link" href="#">
+                            <svg class="icon-svg messenger-link__icon">
+                                <use xlink:href="img/icons/sprite-icons.svg#viber"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="libs/jquery.min.js"></script>
+<script src="libs/dynamic_adapt.js"></script>
+<script src="libs/fancybox.min.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
+<script src="js/app.js"></script> 
+        </div>   
+    </body>
+</html>

@@ -119,13 +119,19 @@ window.onload = function () {
 		  },
 
 	});
-
-
-
 	// Аккардион FAQ
 	$('.faq__btn').click(function(){	 
 		$(this).toggleClass('active');	
 		$(this).parent().next().slideToggle();	
+	});
+	
+	// Tabs
+	$('.tabs__caption').on('click', '.tabs__btn:not(.active)', function (e) {
+		$(this)
+			.addClass('active').siblings().removeClass('active')
+			.closest('.tabs').find('.tabs__content').hide().removeClass('active')
+			.eq($(this).index()).fadeIn().addClass('active');
+
 	});
 
 }
