@@ -7,9 +7,9 @@
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="libs/fancybox.min.css"/>
-	<link rel="stylesheet" href="libs/swiper-bundle.min.css"/>
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/fancybox.min.css?_v=20221027104231"/>
+	<link rel="stylesheet" href="libs/swiper-bundle.min.css?_v=20221027104231"/>
+	<link rel="stylesheet" href="css/style.min.css?_v=20221027104231">
 </head>
     <body>
         <div class="wrapper">
@@ -81,7 +81,7 @@
                 <div class="col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3" data-da=".top-header__row,767,1">
                     <div class="body-header__logo">
                         <div class="body-header__logo-img">
-                            <img src="img/logo.png" alt="Логотип компании">
+                            <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип компании"></picture>
                         </div>                        
                         <span class="body-header__slogan">Аренда манипуляторов в&nbsp;Санкт-Петербурге</span>
                     </div>
@@ -307,12 +307,13 @@
 
             </main>
             <footer class="footer">
+    <div class="button-up scroll"></div>
     <div class="container">
         <div class="row footer__row gy-4">
             <div class="col-sm-6 col-lg-4 footer__logo-col">
                 <div class="footer__logo">
                     <div class="footer__logo-img">
-                        <img src="img/logo.png" alt="Логотип компании в футере">
+                        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Логотип компании в футере"></picture>
                     </div>                        
                     <span class="footer__slogan">Аренда манипуляторов в&nbsp;Санкт-Петербурге</span>
                 </div>
@@ -358,11 +359,49 @@
     </div>
 </footer>
 
-<script src="libs/jquery.min.js"></script>
-<script src="libs/dynamic_adapt.js"></script>
-<script src="libs/fancybox.min.js"></script>
-<script src="libs/swiper-bundle.min.js"></script>
-<script src="js/app.js"></script> 
+<!-- Modals-->
+<div class="modal modal--call" id="modal-call" style="display: none">
+	<div class="modal__title section-title">
+        <div class="h3">Обратный звонок</div>		
+	</div>
+	<div class="modal__text">
+		Укажите контактный контактный телефон, и мы перезвоним вам в ближайшее время
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="Имя" type="text" placeholder="Ваше имя" required="required"/>
+		<input class="form-call__input custom-input" name="Телефон" type="tel" placeholder="+7 (___) ___-__-__" required="required"/>		
+		<button class="form-call__btn main-btn" type="submit">Отправить</button>
+        <label class="form-call__policy form-checkbox">
+            <input class="form-checkbox__input" type="checkbox" checked="">
+            <span class="form-checkbox__text">Я согласен на <a href="#">обработку персональных данных</a></span>
+        </label>
+	</form>
+</div>
+<div class="modal modal--call" id="modal-order" style="display: none">
+	<div class="modal__title section-title">
+        <div class="h3">Оставить заявку</div>		
+	</div>
+	<div class="modal__text">
+		Укажите контактный контактный телефон, и мы перезвоним вам в ближайшее время
+	</div>
+	<form class="modal__form-call form-call" >
+        <input class="form-call__input custom-input" name="Имя" type="text" placeholder="Ваше имя" required="required"/>
+		<input class="form-call__input custom-input" name="Телефон" type="tel" placeholder="+7 (___) ___-__-__" required="required"/>		
+		<button class="form-call__btn main-btn" type="submit">Отправить</button>
+        <label class="form-call__policy form-checkbox">
+            <input class="form-checkbox__input" type="checkbox" checked="">
+            <span class="form-checkbox__text">Я согласен на <a href="#">обработку персональных данных</a></span>
+        </label>
+	</form>
+</div>
+<!-- END Modals-->
+
+<script src="libs/jquery.min.js?_v=20221027104231"></script>
+<script src="libs/dynamic_adapt.js?_v=20221027104231"></script>
+<script src="libs/fancybox.min.js?_v=20221027104231"></script>
+<script src="libs/swiper-bundle.min.js?_v=20221027104231"></script>
+<script src="libs/inputmask.min.js?_v=20221027104231"></script>
+<script src="js/app.js?_v=20221027104231"></script> 
         </div>  
     </body>
 </html>

@@ -134,4 +134,49 @@ window.onload = function () {
 
 	});
 
+	// Прокрутка наверх страницы
+	$(window).on('scroll', function () {
+		if ($(this).scrollTop() > 100) {
+			$('.button-up').addClass('scroll');
+		} else {
+			$('.button-up').removeClass('scroll');
+		}
+	});
+	$('.button-up').click(function(){
+		$('body,html').animate({
+		scrollTop: 0
+		}, 500);
+		return false;
+	});
+
+	// Модалки
+	const link = ".link-modal-js";
+	$(link).fancybox({
+		arrows: false,
+		infobar: false,
+		touch: false,
+		type: 'inline',
+		autoFocus: false,
+		i18n: {
+			en: {
+				CLOSE: "Закрыть",
+				NEXT: "Вперед",
+				PREV: "Назад" 
+
+			}
+		}
+	});
+	$(".modal-close-js").click(function () {
+		$.fancybox.close();
+	});
+	$.fancybox.defaults.backFocus = false;
+
+// mask for input
+	let InputTel = [].slice.call(document.querySelectorAll('input[type="tel"]'));
+	InputTel.forEach(element => element.setAttribute("pattern", "[+][0-9]{1}[(][0-9]{3}[)][0-9]{3}-[0-9]{2}-[0-9]{2}"));
+	Inputmask("+7(999)999-99-99", {
+		showMaskOnHover: false
+	}).mask(InputTel);
+
+
 }
